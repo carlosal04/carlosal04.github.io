@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
    <url>
-      <loc>https://basaltosyagregados.com/es/</loc>
-      <xhtml:link rel="alternate" hreflang="cn" href="https://basaltosyagregados.com/cn/" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://basaltosyagregados.com/" />
-      <xhtml:link rel="alternate" hreflang="es" href="https://basaltosyagregados.com/es/" />
+      <loc>https://www.basaltosyagregados.com/es/</loc>
+      <xhtml:link rel="alternate" hreflang="cn" href="https://www.basaltosyagregados.com/cn/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/" />
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/" />
    </url>
    <url>
-      <loc>https://basaltosyagregados.com/es/contact/</loc>
-      <xhtml:link rel="alternate" hreflang="en" href="https://basaltosyagregados.com/contact/" />
-      <xhtml:link rel="alternate" hreflang="cn" href="https://basaltosyagregados.com/cn/contact/" />
-      <xhtml:link rel="alternate" hreflang="es" href="https://basaltosyagregados.com/es/contact/" />
+      <loc>https://www.basaltosyagregados.com/es/contact/</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/contact/" />
+      <xhtml:link rel="alternate" hreflang="cn" href="https://www.basaltosyagregados.com/cn/contact/" />
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/contact/" />
    </url>
    <url>
-      <loc>https://basaltosyagregados.com/es/about/</loc>
-      <xhtml:link rel="alternate" hreflang="en" href="https://basaltosyagregados.com/about/" />
-      <xhtml:link rel="alternate" hreflang="cn" href="https://basaltosyagregados.com/cn/about/" />
-      <xhtml:link rel="alternate" hreflang="es" href="https://basaltosyagregados.com/es/about/" />
+      <loc>https://www.basaltosyagregados.com/es/about/</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/about/" />
+      <xhtml:link rel="alternate" hreflang="cn" href="https://www.basaltosyagregados.com/cn/about/" />
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/about/" />
    </url>
 </urlset>
