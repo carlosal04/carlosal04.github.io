@@ -35,11 +35,21 @@
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="apple-touch-icon" href="/images/favicon.png">
   
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Theme Color for Mobile Browsers -->
+  <meta name="theme-color" content="#3498db">
+  
   <!-- Preconnect to improve performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   
   <!-- Modern Stylesheet -->
   <link rel="stylesheet" href="/css/modern-style.css">
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="/css/modern-style.css" as="style">
+  <link rel="preload" href="/images/main-logo.png" as="image">
   
   <!-- Structured Data for SEO -->
   <script type="application/ld+json">
