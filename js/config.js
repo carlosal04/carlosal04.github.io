@@ -32,6 +32,7 @@ const siteConfig = {
   social: {
     facebook: 'https://www.facebook.com/people/Basaltos-Concretos/100083079552720/',
     instagram: 'https://www.instagram.com/basaltosyagregados',
+    linkedin: 'https://mx.linkedin.com/company/basaltos-y-agregados',
     // Add more social media links as needed
   },
   
@@ -50,6 +51,40 @@ const siteConfig = {
     logo: '/images/main-logo.png',
     ogImage: '/images/main-slider.jpg',
     favicon: '/images/favicon.png'
+  },
+  
+  // Form Configuration
+  // Web3Forms API Configuration
+  // Get your access key from https://web3forms.com
+  // Different keys for development and production environments
+  forms: {
+    web3forms: {
+      // Development access key (for testing on localhost or staging)
+      accessKeyDev: 'YOUR_DEV_WEB3FORMS_ACCESS_KEY_HERE',
+      // Production access key (for live website)
+      accessKeyProd: 'YOUR_PROD_WEB3FORMS_ACCESS_KEY_HERE'
+    }
+  },
+  
+  // Environment detection
+  // Returns 'development' if running on localhost, otherwise 'production'
+  getEnvironment: function() {
+    const hostname = window.location.hostname;
+    if (hostname === 'localhost' || hostname === '127.0.0.1' || hostname.includes('192.168.')) {
+      return 'development';
+    }
+    return 'production';
+  },
+  
+  // Get the appropriate access key based on environment
+  getWeb3FormsKey: function() {
+    const env = this.getEnvironment();
+    const key = env === 'development' 
+      ? this.forms.web3forms.accessKeyDev 
+      : this.forms.web3forms.accessKeyProd;
+    
+    console.log(`Using ${env} environment`);
+    return key;
   }
 };
 
