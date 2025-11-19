@@ -1,0 +1,64 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Client 1",
+      "logo": "/images/clients/client-1.svg",
+      "description": {
+        "en": "Major infrastructure project partner",
+        "es": "Socio en proyectos de infraestructura importantes",
+        "cn": "重大基础设施项目合作伙伴"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Client 2",
+      "logo": "/images/clients/client-2.svg",
+      "description": {
+        "en": "Government construction projects",
+        "es": "Proyectos de construcción gubernamentales",
+        "cn": "政府建设项目"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Client 3",
+      "logo": "/images/clients/client-3.svg",
+      "description": {
+        "en": "Private sector development",
+        "es": "Desarrollo del sector privado",
+        "cn": "私营部门发展"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Client 4",
+      "logo": "/images/clients/client-4.svg",
+      "description": {
+        "en": "Bridge construction partner",
+        "es": "Socio en construcción de puentes",
+        "cn": "桥梁建设合作伙伴"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Client 5",
+      "logo": "/images/clients/client-5.svg",
+      "description": {
+        "en": "Urban development projects",
+        "es": "Proyectos de desarrollo urbano",
+        "cn": "城市发展项目"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Client 6",
+      "logo": "/images/clients/client-6.svg",
+      "description": {
+        "en": "Road construction contracts",
+        "es": "Contratos de construcción de carreteras",
+        "cn": "道路建设合同"
+      }
+    }
+  ]
+}

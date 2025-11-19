@@ -1,19 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.basaltosyagregados.com/</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/" />
+  </url>
   
-  <sitemap>
-    <loc>https://www.basaltosyagregados.com/cn/sitemap.xml</loc>
-    
-  </sitemap>
+  <!-- About Page -->
+  <url>
+    <loc>https://www.basaltosyagregados.com/about/</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/about/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/about/" />
+  </url>
   
-  <sitemap>
-    <loc>https://www.basaltosyagregados.com/en/sitemap.xml</loc>
-    
-  </sitemap>
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.basaltosyagregados.com/contact/</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/contact/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/contact/" />
+  </url>
   
-  <sitemap>
-    <loc>https://www.basaltosyagregados.com/es/sitemap.xml</loc>
-    
-  </sitemap>
+  <!-- Spanish Homepage -->
+  <url>
+    <loc>https://www.basaltosyagregados.com/es/</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/" />
+  </url>
   
-</sitemapindex>
+  <!-- Chinese Homepage -->
+  <url>
+    <loc>https://www.basaltosyagregados.com/cn/</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/" />
+  </url>
+</urlset>
