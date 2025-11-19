@@ -1,6 +1,7 @@
 # Backup files
 *.backup
-*-old.html
+*-old*.html
+*-backup.html
 index.html.backup
 
 # Development

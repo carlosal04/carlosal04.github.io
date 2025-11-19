@@ -190,43 +190,49 @@
       </div>
       
       <div class="contact-grid">
-        <!-- Contact Form -->
+        <!-- Contact Form Section -->
         <div>
-          <form class="contact-form" action="mailto:info@basaltosyagregados.com" method="POST" enctype="text/plain">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Your name">
-            </div>
+          <div class="contact-form">
+            <h3 style="margin-bottom: 1rem;">Send Us a Message</h3>
+            <p style="margin-bottom: 1.5rem; color: var(--text-light);">
+              For secure contact form submissions, we recommend using one of these free services:
+            </p>
             
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            <div class="form-recommendations" style="background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+              <h4 style="margin-bottom: 1rem; font-size: 1.1rem;">Recommended Secure Form Services:</h4>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>✓ Formspree</strong> - Free tier available, spam protection, easy setup<br>
+                  <a href="https://formspree.io" target="_blank" rel="noopener" style="font-size: 0.9rem;">formspree.io</a>
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>✓ Netlify Forms</strong> - Free for static sites, spam filtering included<br>
+                  <a href="https://www.netlify.com/products/forms/" target="_blank" rel="noopener" style="font-size: 0.9rem;">netlify.com/forms</a>
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>✓ Google Forms</strong> - Free, integrated with Google Workspace<br>
+                  <a href="https://forms.google.com" target="_blank" rel="noopener" style="font-size: 0.9rem;">forms.google.com</a>
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>✓ Web3Forms</strong> - Free, no registration required, spam protection<br>
+                  <a href="https://web3forms.com" target="_blank" rel="noopener" style="font-size: 0.9rem;">web3forms.com</a>
+                </li>
+              </ul>
             </div>
-            
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="+52 123 456 7890">
+
+            <p style="margin-bottom: 1.5rem;">
+              <strong>Or contact us directly:</strong>
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="mailto:info@basaltosyagregados.com" class="btn btn-primary" style="text-align: center; width: 100%;">
+                📧 Email Us
+              </a>
+              <a href="tel:+52XXXXXXXXXX" class="btn btn-outline" style="text-align: center; width: 100%; color: var(--text-color); border-color: var(--secondary-color);">
+                📞 Call Us
+              </a>
             </div>
-            
-            <div class="form-group">
-              <label for="subject">Subject *</label>
-              <select id="subject" name="subject" required>
-                <option value="">Select a subject</option>
-                <option value="general">General Inquiry</option>
-                <option value="quote">Request a Quote</option>
-                <option value="project">Project Discussion</option>
-                <option value="partnership">Partnership Opportunity</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-          </form>
+          </div>
         </div>
         
         <!-- Contact Information -->
@@ -234,34 +240,72 @@
           <div class="contact-info">
             <div class="info-item">
               <h3><span class="info-icon">📧</span> Email</h3>
-              <p>info@basaltosyagregados.com</p>
+              <p><a href="mailto:info@basaltosyagregados.com" style="color: var(--secondary-color);">info@basaltosyagregados.com</a></p>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem; color: var(--text-light);">We typically respond within 24 hours</p>
             </div>
             
             <div class="info-item">
               <h3><span class="info-icon">📞</span> Phone</h3>
-              <p>+52 (123) 456-7890</p>
-              <p style="font-size: 0.9rem; margin-top: 0.25rem;">Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p><strong>Office:</strong> <a href="tel:+52XXXXXXXXXX" style="color: var(--secondary-color);">+52 XXX XXX XXXX</a></p>
+              <p><strong>WhatsApp:</strong> <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener" style="color: var(--secondary-color);">+52 XXX XXX XXXX</a></p>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-light);">Monday - Friday: 8:00 AM - 6:00 PM</p>
             </div>
             
             <div class="info-item">
-              <h3><span class="info-icon">📍</span> Location</h3>
-              <p>Mexico</p>
-              <p style="font-size: 0.9rem; margin-top: 0.25rem;">Serving clients nationwide</p>
+              <h3><span class="info-icon">📍</span> Office Location</h3>
+              <p><strong>Address:</strong> [Your Address Here]</p>
+              <p style="margin-top: 0.25rem;">[City, State, Postal Code]</p>
+              <p style="margin-top: 0.25rem;">Mexico</p>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-light);">Serving clients nationwide</p>
             </div>
             
             <div class="info-item">
               <h3><span class="info-icon">⏰</span> Business Hours</h3>
-              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p>Saturday: 9:00 AM - 2:00 PM</p>
-              <p>Sunday: Closed</p>
+              <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+              <p><strong>Saturday:</strong> 9:00 AM - 2:00 PM</p>
+              <p><strong>Sunday:</strong> Closed</p>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-light);">Emergency services available 24/7</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="info-item">
+              <h3><span class="info-icon">🌐</span> Follow Us</h3>
+              <div class="social-links" style="justify-content: flex-start; margin-top: 0.5rem;">
+                <a href="https://www.facebook.com/basaltosyagregados" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/basaltosyagregados" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Map Placeholder -->
+      <!-- Map Section -->
       <div class="map-container">
-        <p>Map integration can be added here</p>
+        <!-- Replace the Google Maps embed URL with your actual business location -->
+        <!-- To get your Google Maps embed code:
+             1. Go to Google Maps (maps.google.com)
+             2. Search for your business address
+             3. Click "Share" button
+             4. Click "Embed a map" tab
+             5. Copy the iframe code and replace the src below
+        -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.707!2d-99.133!3d19.432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU1LjIiTiA5OcKwMDcnNTguOCJX!5e0!3m2!1sen!2smx!4v1234567890123!5m2!1sen!2smx"
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Basaltos y Agregados Office Location">
+        </iframe>
+        <p style="text-align: center; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+          📍 Update this map with your actual business location in Google Maps
+        </p>
       </div>
     </div>
   </section>
@@ -291,6 +335,16 @@
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+
+        <!-- Social Media Links -->
+        <div class="social-links" style="margin-top: 1.5rem;">
+          <a href="https://www.facebook.com/basaltosyagregados" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/basaltosyagregados" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
       </div>
       
       <div class="copyright">
