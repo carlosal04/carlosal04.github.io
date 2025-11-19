@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+   <!-- English Homepage -->
    <url>
-      <loc>https://www.basaltosyagregados.com/</loc>
-      <xhtml:link rel="alternate" hreflang="cn" href="https://www.basaltosyagregados.com/cn/" />
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/" />
+      <loc>https://www.basaltosyagregados.com/en/</loc>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/en/" />
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.basaltosyagregados.com/" />
    </url>
+   <!-- English About Page -->
    <url>
-      <loc>https://www.basaltosyagregados.com/about/</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/about/" />
-      <xhtml:link rel="alternate" hreflang="cn" href="https://www.basaltosyagregados.com/cn/about/" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/about/" />
+      <loc>https://www.basaltosyagregados.com/en/about/</loc>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/about/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/en/about/" />
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/about/" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.basaltosyagregados.com/about/" />
    </url>
+   <!-- English Contact Page -->
    <url>
-      <loc>https://www.basaltosyagregados.com/contact/</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/es/contact/" />
-      <xhtml:link rel="alternate" hreflang="cn" href="https://www.basaltosyagregados.com/cn/contact/" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/contact/" />
+      <loc>https://www.basaltosyagregados.com/en/contact/</loc>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.basaltosyagregados.com/contact/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basaltosyagregados.com/en/contact/" />
+      <xhtml:link rel="alternate" hreflang="zh" href="https://www.basaltosyagregados.com/cn/contact/" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://www.basaltosyagregados.com/contact/" />
    </url>
 </urlset>

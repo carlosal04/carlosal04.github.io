@@ -1,16 +1,30 @@
 # robots.txt for www.basaltosyagregados.com
+# Construction and Engineering Company in Mexico
+# Empresa de Construcción e Ingeniería en México
 
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemaps
 Sitemap: https://www.basaltosyagregados.com/sitemap.xml
-Sitemap: https://www.basaltosyagregados.com/sitemap-modern.xml
 
-# Crawl-delay (optional, helps with server load)
+# Crawl-delay (helps with server load)
 Crawl-delay: 1
 
-# Disallow administrative paths if any
+# Allow important resources
+Allow: /data/clients.json
+Allow: /manifest.json
+Allow: /js/
+Allow: /css/
+Allow: /images/
+
+# Disallow administrative and backup files
 Disallow: /admin/
-Disallow: /*.json$
 Disallow: /*.backup$
+Disallow: /*-old.html$
+Disallow: /*-backup.html$
+
+# Block common exploit paths
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php

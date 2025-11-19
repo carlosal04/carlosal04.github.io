@@ -7,21 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- SEO Meta Tags -->
-  <title>联系我们 - Basaltos & Agregados | 取得联系</title>
-  <meta name="description" content="联系Basaltos y Agregados S.A. de C.V. for your construction and engineering needs. Reach out to discuss your project requirements.">
-  <meta name="keywords" content="contact, basaltos agregados, construction inquiry, engineering services, quote request">
+  <title>联系我们 - Basaltos & Agregados | 比亚埃尔莫萨报价，塔巴斯科州</title>
+  <meta name="description" content="联系比亚埃尔莫萨的Basaltos y Agregados，塔巴斯科州。电话：+52 993 177 2142。申请墨西哥铺路、桥梁、城市化和土木工程项目的报价。为政府和私营部门提供专业服务。">
+  <meta name="keywords" content="联系Basaltos Agregados, 塔巴斯科建筑报价, 比亚埃尔莫萨承包商电话, 墨西哥土木工程报价, 政府承包商联系, 铺路服务报价, 比亚埃尔莫萨建筑办公室, Basaltos Agregados地址">
   <meta name="author" content="Basaltos & Agregados">
   <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="MX-TAB">
+  <meta name="geo.placename" content="Villahermosa, Tabasco, Mexico">
+  <meta name="geo.position" content="17.98923;-92.92814">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.basaltosyagregados.com/cn/contact/">
-  <meta property="og:title" content="联系我们 - Basaltos & Agregados">
-  <meta property="og:description" content="Get in touch with us for your construction and engineering project needs.">
+  <meta property="og:title" content="联系我们 - Basaltos & Agregados | 比亚埃尔莫萨，塔巴斯科州">
+  <meta property="og:description" content="联系我们进行墨西哥建筑和工程项目。电话：+52 993 177 2142。位于塔巴斯科州比亚埃尔莫萨。">
   <meta property="og:image" content="https://www.basaltosyagregados.com/images/main-slider.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:locale:alternate" content="es_MX">
   <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Basaltos & Agregados">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="联系我们 - Basaltos & Agregados | 比亚埃尔莫萨，塔巴斯科州">
+  <meta name="twitter:description" content="联系我们进行墨西哥建筑项目。电话：+52 993 177 2142">
+  <meta name="twitter:image" content="https://www.basaltosyagregados.com/images/main-slider.jpg">
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.basaltosyagregados.com/cn/contact/">
@@ -332,8 +344,14 @@
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"
-          title="Basaltos y Agregados 办公地点 - Villahermosa, Tabasco">
+          title="Basaltos y Agregados 办公地点 - Villahermosa, Tabasco"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
         </iframe>
+        <div style="display:none; padding: 2rem; background: var(--bg-light); border-radius: var(--radius-md); text-align: center;">
+          <p><strong>🗺️ 位置：</strong></p>
+          <p>PERIFÉRICO ARCO NORESTE S/N, COL. CASA BLANCA<br>Villahermosa, Tabasco 86060, Mexico</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=17.98923,-92.92814" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 1rem;">在谷歌地图中打开</a>
+        </div>
         <p style="text-align: center; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
           📍 PERIFÉRICO ARCO NORESTE S/N COL. CASA BLANCA, Villahermosa, Tabasco 86060
         </p>
@@ -394,5 +412,28 @@
   <script src="/js/modern-script.js"></script>
   <!-- Contact Form Handler -->
   <script src="/js/contact-form.js"></script>
+  
+  <!-- Google Maps Error Handler -->
+  <script>
+    // Detect if Google Maps iframe is blocked and show fallback
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const mapIframe = document.querySelector('.map-container iframe');
+        const fallback = mapIframe ? mapIframe.nextElementSibling : null;
+        
+        if (mapIframe && fallback && fallback.tagName === 'DIV') {
+          try {
+            if (mapIframe.offsetHeight < 100) {
+              mapIframe.style.display = 'none';
+              fallback.style.display = 'block';
+              console.info('Google Maps embed blocked - showing fallback location info');
+            }
+          } catch (e) {
+            console.info('Google Maps access restricted - showing fallback location info');
+          }
+        }
+      }, 2000);
+    });
+  </script>
 </body>
 </html>

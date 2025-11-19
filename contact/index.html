@@ -7,21 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- SEO Meta Tags -->
-  <title>Contacto - Basaltos & Agregados | Contáctenos</title>
-  <meta name="description" content="Contacte a Basaltos y Agregados S.A. de C.V. para sus necesidades de construcción e ingeniería. Comuníquese para discutir los requisitos de su proyecto.">
-  <meta name="keywords" content="contacto, basaltos agregados, consulta construcción, servicios ingeniería, solicitar cotización">
+  <title>Contacto - Basaltos & Agregados | Solicite Cotización en Villahermosa, Tabasco</title>
+  <meta name="description" content="Contacte a Basaltos y Agregados en Villahermosa, Tabasco. Tel: +52 993 177 2142. Solicite cotización para proyectos de pavimentación, puentes, urbanización y obra civil en México. Atención profesional para gobierno y sector privado.">
+  <meta name="keywords" content="contacto Basaltos Agregados, cotización construcción Tabasco, empresa constructora Villahermosa teléfono, solicitar presupuesto obra civil México, contacto constructora gobierno, servicios pavimentación cotización, oficina construcción Villahermosa, dirección Basaltos Agregados">
   <meta name="author" content="Basaltos & Agregados">
   <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="MX-TAB">
+  <meta name="geo.placename" content="Villahermosa, Tabasco">
+  <meta name="geo.position" content="17.98923;-92.92814">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.basaltosyagregados.com/contact/">
-  <meta property="og:title" content="Contacto - Basaltos & Agregados">
-  <meta property="og:description" content="Póngase en contacto con nosotros para sus necesidades de proyectos de construcción e ingeniería.">
+  <meta property="og:title" content="Contacto - Basaltos & Agregados | Villahermosa, Tabasco">
+  <meta property="og:description" content="Contáctenos para proyectos de construcción e ingeniería en México. Tel: +52 993 177 2142. Ubicados en Villahermosa, Tabasco.">
   <meta property="og:image" content="https://www.basaltosyagregados.com/images/main-slider.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_MX">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:site_name" content="Basaltos & Agregados">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contacto - Basaltos & Agregados | Villahermosa, Tabasco">
+  <meta name="twitter:description" content="Contáctenos para proyectos de construcción en México. Tel: +52 993 177 2142">
+  <meta name="twitter:image" content="https://www.basaltosyagregados.com/images/main-slider.jpg">
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.basaltosyagregados.com/contact/">
@@ -332,8 +344,14 @@
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"
-          title="Basaltos y Agregados Ubicación de Oficina - Villahermosa, Tabasco">
+          title="Basaltos y Agregados Ubicación de Oficina - Villahermosa, Tabasco"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
         </iframe>
+        <div style="display:none; padding: 2rem; background: var(--bg-light); border-radius: var(--radius-md); text-align: center;">
+          <p><strong>🗺️ Ubicación:</strong></p>
+          <p>PERIFÉRICO ARCO NORESTE S/N, COL. CASA BLANCA<br>Villahermosa, Tabasco 86060, México</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=17.98923,-92.92814" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 1rem;">Abrir en Google Maps</a>
+        </div>
         <p style="text-align: center; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
           📍 PERIFÉRICO ARCO NORESTE S/N COL. CASA BLANCA, Villahermosa, Tabasco 86060
         </p>
@@ -394,5 +412,30 @@
   <script src="/js/modern-script.js"></script>
   <!-- Contact Form Handler -->
   <script src="/js/contact-form.js"></script>
+  
+  <!-- Google Maps Error Handler -->
+  <script>
+    // Detect if Google Maps iframe is blocked and show fallback
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const mapIframe = document.querySelector('.map-container iframe');
+        const fallback = mapIframe ? mapIframe.nextElementSibling : null;
+        
+        if (mapIframe && fallback && fallback.tagName === 'DIV') {
+          // Check if iframe loaded successfully
+          try {
+            // If iframe is very small or hidden, it might be blocked
+            if (mapIframe.offsetHeight < 100) {
+              mapIframe.style.display = 'none';
+              fallback.style.display = 'block';
+              console.info('Google Maps embed blocked - showing fallback location info');
+            }
+          } catch (e) {
+            console.info('Google Maps access restricted - showing fallback location info');
+          }
+        }
+      }, 2000); // Wait 2 seconds for map to load
+    });
+  </script>
 </body>
 </html>
