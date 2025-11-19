@@ -16,13 +16,14 @@ const siteConfig = {
   // Contact Information (from Facebook page)
   contact: {
     email: 'basaltosconcretos@hotmail.com',
-    phone: '+52 998 147 3817',
-    whatsapp: '+52 998 147 3817',
+    phone: '+52 993 177 2142',
+    whatsapp: '+52 993 177 2142',
     address: {
-      street: 'Carretera Tulum - Cobá km 2.5',
-      city: 'Tulum',
-      state: 'Quintana Roo',
-      postalCode: '77760',
+      street: 'PERIFÉRICO ARCO NORESTE S/N',
+      colony: 'COL. CASA BLANCA',
+      city: 'Villahermosa',
+      state: 'Tabasco',
+      postalCode: '86060',
       country: 'México'
     }
   },
@@ -35,13 +36,13 @@ const siteConfig = {
   },
   
   // Google Maps Embed
-  googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.3!2d-87.4628!3d20.2114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDEyJzQxLjAiTiA4N8KwMjcnNDYuMSJX!5e0!3m2!1sen!2smx!4v1234567890123!5m2!1sen!2smx',
+  googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241613.00553957842!2d-92.92814!3d17.98923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7f58c3e3197%3A0x58a6b7e508ca2b84!2sVillahermosa%2C%20Tabasco%2C%20Mexico!5e0!3m2!1sen!2smx!4v1700000000000!5m2!1sen!2smx',
   
-  // Business Hours
+  // Business Hours (from Facebook page)
   businessHours: {
-    weekdays: 'Monday - Friday: 8:00 AM - 6:00 PM',
-    saturday: 'Saturday: 9:00 AM - 2:00 PM',
-    sunday: 'Sunday: Closed'
+    weekdays: 'Monday - Friday: 7:00 AM - 5:00 PM',
+    saturday: 'Saturday: 7:00 AM - 1:00 PM',
+    sunday: 'Sunday: CLOSED'
   },
   
   // SEO Images (relative to site root)
