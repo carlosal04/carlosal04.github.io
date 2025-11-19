@@ -31,7 +31,7 @@ async function loadClients() {
       
       clientCard.innerHTML = `
         <div class="client-logo">
-          <img src="${client.logo}" alt="${client.name}" loading="lazy" onerror="this.src='/images/clients/placeholder.png'">
+          <img src="${client.logo}" alt="${client.name}" loading="lazy">
         </div>
         <p class="client-description">${description}</p>
       `;
