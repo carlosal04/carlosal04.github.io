@@ -3,9 +3,10 @@
 // Detect current language from URL path
 function getCurrentLanguage() {
   const path = window.location.pathname;
-  if (path.startsWith('/es/')) return 'es';
+  if (path.startsWith('/en/')) return 'en';
   if (path.startsWith('/cn/')) return 'cn';
-  return 'en'; // default
+  // Spanish is the default (root path)
+  return 'es';
 }
 
 async function loadClients() {
