@@ -99,7 +99,12 @@ a {
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: var(--trust-blue-dark);
+}
+
+/* Prevent color change on social links - keep icons visible */
+.social-link:hover {
+  color: white;
 }
 
 img {
