@@ -83,7 +83,6 @@ const siteConfig = {
       ? this.forms.web3forms.accessKeyDev 
       : this.forms.web3forms.accessKeyProd;
     
-    console.log(`Using ${env} environment`);
     return key;
   }
 };

@@ -222,6 +222,9 @@
             </p>
             
             <form id="contact-form">
+              <!-- Honeypot field for spam protection (hidden from users) -->
+              <input type="checkbox" name="botcheck" style="display: none;">
+              
               <div class="form-group">
                 <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -344,8 +347,7 @@
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"
-          title="Basaltos y Agregados Office Location - Villahermosa, Tabasco"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          title="Basaltos y Agregados Office Location - Villahermosa, Tabasco">
         </iframe>
         <div style="display:none; padding: 2rem; background: var(--bg-light); border-radius: var(--radius-md); text-align: center;">
           <p><strong>🗺️ Location:</strong></p>
@@ -412,28 +414,7 @@
   <script src="/js/modern-script.js"></script>
   <!-- Contact Form Handler -->
   <script src="/js/contact-form.js"></script>
-  
-  <!-- Google Maps Error Handler -->
-  <script>
-    // Detect if Google Maps iframe is blocked and show fallback
-    window.addEventListener('load', function() {
-      setTimeout(function() {
-        const mapIframe = document.querySelector('.map-container iframe');
-        const fallback = mapIframe ? mapIframe.nextElementSibling : null;
-        
-        if (mapIframe && fallback && fallback.tagName === 'DIV') {
-          try {
-            if (mapIframe.offsetHeight < 100) {
-              mapIframe.style.display = 'none';
-              fallback.style.display = 'block';
-              console.info('Google Maps embed blocked - showing fallback location info');
-            }
-          } catch (e) {
-            console.info('Google Maps access restricted - showing fallback location info');
-          }
-        }
-      }, 2000);
-    });
-  </script>
+  <!-- Maps Error Handler -->
+  <script src="/js/maps-handler.js"></script>
 </body>
 </html>

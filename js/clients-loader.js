@@ -29,16 +29,28 @@ async function loadClients() {
         ? (client.description[currentLang] || client.description.en || '')
         : client.description;
       
-      clientCard.innerHTML = `
-        <div class="client-logo">
-          <img src="${client.logo}" alt="${client.name}" loading="lazy">
-        </div>
-        <p class="client-description">${description}</p>
-      `;
+      // Create logo container
+      const logoDiv = document.createElement('div');
+      logoDiv.className = 'client-logo';
+      
+      // Create and configure image element securely
+      const img = document.createElement('img');
+      img.src = client.logo;
+      img.alt = client.name;
+      img.loading = 'lazy';
+      logoDiv.appendChild(img);
+      
+      // Create description paragraph securely
+      const descP = document.createElement('p');
+      descP.className = 'client-description';
+      descP.textContent = description;
+      
+      // Append elements to card
+      clientCard.appendChild(logoDiv);
+      clientCard.appendChild(descP);
       clientsGrid.appendChild(clientCard);
     });
   } catch (error) {
-    console.error('Error loading clients:', error);
     // Fallback to showing placeholder message
     const clientsGrid = document.getElementById('clients-grid');
     if (clientsGrid) {
@@ -48,7 +60,15 @@ async function loadClients() {
         es: 'La información de nuestros clientes estará disponible próximamente.',
         cn: '我们的客户信息即将推出。'
       };
-      clientsGrid.innerHTML = `<p style="text-align: center; grid-column: 1 / -1;">${messages[currentLang] || messages.en}</p>`;
+      
+      // Create error message element securely
+      const errorP = document.createElement('p');
+      errorP.style.textAlign = 'center';
+      errorP.style.gridColumn = '1 / -1';
+      errorP.textContent = messages[currentLang] || messages.en;
+      
+      clientsGrid.innerHTML = '';
+      clientsGrid.appendChild(errorP);
     }
   }
 }

@@ -3,12 +3,29 @@
  * This script handles form submission with validation and user feedback
  */
 
+/**
+ * Sanitize user input to prevent XSS attacks
+ * @param {string} str - Input string to sanitize
+ * @returns {string} - Sanitized string
+ */
+function sanitizeInput(str) {
+  if (typeof str !== 'string') return '';
+  
+  // Create a temporary div element to use browser's built-in HTML encoding
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact-form');
   
+  // Rate limiting: Track last submission time
+  let lastSubmitTime = 0;
+  const SUBMIT_COOLDOWN = 3000; // 3 seconds between submissions
+  
   // Check if form exists on the page
   if (!form) {
-    console.log('Contact form not found on this page');
     return;
   }
 
@@ -20,9 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Check if access key is configured
   if (!accessKey || accessKey.includes('YOUR_')) {
-    const env = siteConfig?.getEnvironment ? siteConfig.getEnvironment() : 'unknown';
-    console.error(`Web3Forms access key not configured for ${env} environment. Please update js/config.js`);
-    
     // Get appropriate error message based on page language
     const lang = document.documentElement.lang || 'es';
     const errorMessages = {
@@ -39,18 +53,48 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    // Rate limiting check
+    const now = Date.now();
+    if (now - lastSubmitTime < SUBMIT_COOLDOWN) {
+      const lang = document.documentElement.lang || 'es';
+      const messages = {
+        'es': 'Por favor, espere unos segundos antes de enviar otro mensaje.',
+        'en': 'Please wait a few seconds before submitting another message.',
+        'zh': '请等待几秒钟后再提交另一条消息。'
+      };
+      showStatus('error', messages[lang] || messages['es']);
+      return;
+    }
+
     // Get form data
     const formData = new FormData(form);
     
-    // Add access key from config
-    formData.append("access_key", accessKey);
+    // Sanitize all text inputs before submission
+    const sanitizedData = new FormData();
+    for (const [key, value] of formData.entries()) {
+      if (typeof value === 'string') {
+        sanitizedData.append(key, sanitizeInput(value));
+      } else {
+        sanitizedData.append(key, value);
+      }
+    }
     
-    // Add additional metadata
-    formData.append("from_name", "Sitio Web Basaltos & Agregados");
-    formData.append("subject", `Nuevo mensaje de contacto: ${formData.get('subject')}`);
+    // Add access key from config
+    sanitizedData.append("access_key", accessKey);
+    
+    // Add Web3Forms spam protection
+    // Honeypot field (hidden from users, catches bots)
+    sanitizedData.append("botcheck", "");
+    
+    // Add additional metadata (sanitized)
+    sanitizedData.append("from_name", "Sitio Web Basaltos & Agregados");
+    sanitizedData.append("subject", sanitizeInput(`Nuevo mensaje de contacto: ${formData.get('subject')}`));
 
     // Store original button text
     const originalText = submitBtn.textContent;
+    
+    // Update last submit time
+    lastSubmitTime = now;
 
     // Update button state
     submitBtn.textContent = "Enviando...";
@@ -59,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData
+        body: sanitizedData
       });
 
       const data = await response.json();
@@ -92,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
     } catch (error) {
-      console.error('Form submission error:', error);
       const lang = document.documentElement.lang || 'es';
       const messages = {
         'es': 'Algo salió mal. Por favor, inténtelo de nuevo o contáctenos directamente por teléfono o correo electrónico.',
