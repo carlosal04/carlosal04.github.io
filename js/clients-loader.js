@@ -1,4 +1,12 @@
-/* Client Loader - Dynamically load clients from JSON */
+/* Client Loader - Dynamically load clients from JSON with multi-language support */
+
+// Detect current language from URL path
+function getCurrentLanguage() {
+  const path = window.location.pathname;
+  if (path.startsWith('/es/')) return 'es';
+  if (path.startsWith('/cn/')) return 'cn';
+  return 'en'; // default
+}
 
 async function loadClients() {
   try {
@@ -8,16 +16,23 @@ async function loadClients() {
     const clientsGrid = document.getElementById('clients-grid');
     if (!clientsGrid) return;
     
+    const currentLang = getCurrentLanguage();
     clientsGrid.innerHTML = '';
     
     data.clients.forEach(client => {
       const clientCard = document.createElement('div');
       clientCard.className = 'client-card';
+      
+      // Get description in current language, fallback to English
+      const description = typeof client.description === 'object' 
+        ? (client.description[currentLang] || client.description.en || '')
+        : client.description;
+      
       clientCard.innerHTML = `
         <div class="client-logo">
           <img src="${client.logo}" alt="${client.name}" loading="lazy" onerror="this.src='/images/clients/placeholder.png'">
         </div>
-        <p class="client-description">${client.description}</p>
+        <p class="client-description">${description}</p>
       `;
       clientsGrid.appendChild(clientCard);
     });
@@ -26,7 +41,13 @@ async function loadClients() {
     // Fallback to showing placeholder message
     const clientsGrid = document.getElementById('clients-grid');
     if (clientsGrid) {
-      clientsGrid.innerHTML = '<p style="text-align: center; grid-column: 1 / -1;">Our clients information will be available soon.</p>';
+      const currentLang = getCurrentLanguage();
+      const messages = {
+        en: 'Our clients information will be available soon.',
+        es: 'La información de nuestros clientes estará disponible próximamente.',
+        cn: '我们的客户信息即将推出。'
+      };
+      clientsGrid.innerHTML = `<p style="text-align: center; grid-column: 1 / -1;">${messages[currentLang] || messages.en}</p>`;
     }
   }
 }
