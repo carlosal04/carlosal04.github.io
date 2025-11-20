@@ -356,10 +356,29 @@ img {
 /* Section Styles */
 section {
   padding: 5rem 0;
+  position: relative;
+}
+
+section:not(:last-of-type)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--text-light) 20%, var(--text-light) 80%, transparent);
+  opacity: 0.2;
 }
 
 .section-light {
   background: var(--bg-light);
+}
+
+.section-light::after {
+  background: linear-gradient(to right, transparent, var(--primary-grey) 20%, var(--primary-grey) 80%, transparent);
+  opacity: 0.15;
 }
 
 .section-header {
