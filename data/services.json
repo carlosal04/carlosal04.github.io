@@ -1,0 +1,80 @@
+{
+  "services": [
+    {
+      "id": "infrastructure",
+      "icon": "🏗️",
+      "title": {
+        "es": "Infraestructura y Obra Civil",
+        "en": "Infrastructure & Civil Works",
+        "zh": "基础设施与土木工程"
+      },
+      "description": {
+        "es": "Desarrollo urbano: pavimentos de asfalto y concreto hidráulico. Puentes de concreto, metálicos y mixtos. Cimentaciones superficiales, semi-profundas y profundas. Instalaciones civiles generales.",
+        "en": "Urban development: asphalt and hydraulic concrete pavements. Concrete, metallic, and mixed bridges. Shallow, semi-deep, and deep foundations. General civil installations.",
+        "zh": "城市发展：沥青和水力混凝土路面。混凝土、金属和混合桥梁。浅层、半深层和深层地基。一般土木设施。"
+      },
+      "features": {
+        "es": ["Pavimentos urbanos", "Puentes estructurales", "Cimentaciones", "Instalaciones civiles"],
+        "en": ["Urban pavements", "Structural bridges", "Foundations", "Civil installations"],
+        "zh": ["城市路面", "结构桥梁", "地基", "民用设施"]
+      }
+    },
+    {
+      "id": "materials",
+      "icon": "🏭",
+      "title": {
+        "es": "Materiales y Prefabricación",
+        "en": "Materials & Prefabrication",
+        "zh": "材料与预制"
+      },
+      "description": {
+        "es": "Comercialización de piedra basáltica y agregados. Planta de prefabricados: trabes, durmientes, alcantarillas, tubos. Maquila de concreto con o sin materiales.",
+        "en": "Commercialization of basalt stone and aggregates. Prefabricated plant: beams, sleepers, culverts, pipes. Concrete maquila with or without raw materials.",
+        "zh": "玄武岩和骨料商业化。预制工厂：梁、枕木、涵洞、管道。混凝土加工，有无原材料均可。"
+      },
+      "features": {
+        "es": ["Basalto y agregados", "Productos prefabricados", "Maquila de concreto"],
+        "en": ["Basalt & aggregates", "Prefabricated products", "Concrete maquila"],
+        "zh": ["玄武岩和骨料", "预制产品", "混凝土加工"]
+      }
+    },
+    {
+      "id": "consulting",
+      "icon": "📋",
+      "title": {
+        "es": "Consultoría y Supervisión",
+        "en": "Consulting & Project Oversight",
+        "zh": "咨询与项目监督"
+      },
+      "description": {
+        "es": "Consultoría de gestión profesional y supervisión de proyectos para garantizar la calidad y cumplimiento en todas las fases de construcción.",
+        "en": "Professional management consulting and project supervision to ensure quality and compliance throughout all construction phases.",
+        "zh": "专业管理咨询和项目监督，确保施工各阶段的质量和合规性。"
+      },
+      "features": {
+        "es": ["Consultoría de gestión", "Supervisión de proyectos"],
+        "en": ["Management consulting", "Project supervision"],
+        "zh": ["管理咨询", "项目监督"]
+      }
+    },
+    {
+      "id": "specialized",
+      "icon": "🔧",
+      "title": {
+        "es": "Servicios Especializados",
+        "en": "Specialized Services",
+        "zh": "专业服务"
+      },
+      "description": {
+        "es": "Demoliciones y desmantelamiento seguro con recuperación de materiales. Logística de construcción prefabricada y renta de maquinaria. Renta de revolvedora volumétrica móvil.",
+        "en": "Safe demolitions and dismantling with material recovery. Precast construction logistics and machinery rental. Mobile volumetric concrete mixer rental.",
+        "zh": "安全拆除和拆卸，材料回收。预制建筑物流和机械租赁。移动容积混凝土搅拌机租赁。"
+      },
+      "features": {
+        "es": ["Demoliciones seguras", "Logística y transporte", "Renta de equipo"],
+        "en": ["Safe demolitions", "Logistics & transport", "Equipment rental"],
+        "zh": ["安全拆除", "物流运输", "设备租赁"]
+      }
+    }
+  ]
+}

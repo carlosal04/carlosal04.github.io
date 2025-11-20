@@ -13,6 +13,8 @@ Crawl-delay: 1
 
 # Allow important resources
 Allow: /data/clients.json
+Allow: /data/services.json
+Allow: /data/experience.json
 Allow: /manifest.json
 Allow: /js/
 Allow: /css/

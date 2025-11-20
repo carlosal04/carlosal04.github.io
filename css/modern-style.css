@@ -13,7 +13,7 @@
   /* Neutral Colors */
   --text-primary: #1f2937;          /* Deep grey for readability */
   --text-secondary: #6b7280;        /* Medium grey for secondary text */
-  --text-light: #9ca3af;            /* Light grey for subtle text */
+  --text-light: #6b7280;            /* Accessible grey for subtle text (WCAG AA compliant) */
   
   /* Background Colors */
   --bg-white: #ffffff;

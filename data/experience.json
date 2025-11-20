@@ -1,0 +1,102 @@
+{
+  "experience": [
+    {
+      "id": "public-private",
+      "icon": "🏛️",
+      "title": {
+        "es": "Proyectos Públicos y Privados",
+        "en": "Public and Private Sector Projects",
+        "zh": "公共和私营部门项目"
+      },
+      "description": {
+        "es": "Experiencia comprobada en infraestructura gubernamental y desarrollo privado, trabajando con diversos sectores para entregar proyectos de calidad.",
+        "en": "Proven experience in both government infrastructure and private development, working across diverse sectors to deliver quality projects.",
+        "zh": "在政府基础设施和私人开发方面均有丰富经验，跨多个行业交付优质项目。"
+      }
+    },
+    {
+      "id": "urbanization",
+      "icon": "🏙️",
+      "title": {
+        "es": "Proyectos de Urbanización",
+        "en": "Urbanization Projects",
+        "zh": "城市化项目"
+      },
+      "description": {
+        "es": "Historial comprobado en pavimentos de asfalto y concreto hidráulico para el desarrollo urbano y mejora de infraestructura citadina.",
+        "en": "Proven track record in asphalt and hydraulic concrete pavements for city development and urban infrastructure improvement.",
+        "zh": "在城市发展和城市基础设施改善方面，沥青和水力混凝土路面方面拥有良好的记录。"
+      }
+    },
+    {
+      "id": "bridges",
+      "icon": "🌉",
+      "title": {
+        "es": "Construcción de Puentes",
+        "en": "Bridge Construction",
+        "zh": "桥梁建设"
+      },
+      "description": {
+        "es": "Ejecución exitosa de puentes de concreto, metálicos y mixtos, aplicando las mejores prácticas de ingeniería estructural.",
+        "en": "Successful execution of concrete, metallic, and mixed bridges, applying best practices in structural engineering.",
+        "zh": "成功执行混凝土、金属和混合桥梁项目，应用结构工程最佳实践。"
+      }
+    },
+    {
+      "id": "foundations",
+      "icon": "🏗️",
+      "title": {
+        "es": "Experiencia en Cimentaciones",
+        "en": "Foundations Expertise",
+        "zh": "地基专业知识"
+      },
+      "description": {
+        "es": "Entrega de obras de cimentación superficial, semi-profunda y profunda, adaptadas a las condiciones específicas de cada terreno.",
+        "en": "Delivery of shallow, semi-deep, and deep foundation works, tailored to specific ground conditions of each site.",
+        "zh": "提供浅层、半深层和深层地基工程，根据每个场地的具体地面条件量身定制。"
+      }
+    },
+    {
+      "id": "prefabricated",
+      "icon": "🏭",
+      "title": {
+        "es": "Estructuras Prefabricadas",
+        "en": "Prefabricated Structures",
+        "zh": "预制结构"
+      },
+      "description": {
+        "es": "Experiencia en la producción a escala de trabes, durmientes, alcantarillas y tubos en nuestra planta de prefabricados.",
+        "en": "Experience producing beams, sleepers, culverts, and pipes at scale in our prefabrication plant.",
+        "zh": "在我们的预制工厂大规模生产梁、枕木、涵洞和管道的经验。"
+      }
+    },
+    {
+      "id": "installations",
+      "icon": "⚡",
+      "title": {
+        "es": "Instalaciones Civiles",
+        "en": "Civil Installations",
+        "zh": "民用设施"
+      },
+      "description": {
+        "es": "Obras eléctricas, de plomería, gas y albañilería en diversos proyectos, garantizando instalaciones seguras y eficientes.",
+        "en": "Electrical, plumbing, gas, and masonry works across diverse projects, ensuring safe and efficient installations.",
+        "zh": "在各种项目中进行电气、管道、燃气和砌筑工程，确保安全高效的安装。"
+      }
+    },
+    {
+      "id": "demolition",
+      "icon": "🔨",
+      "title": {
+        "es": "Demolición y Recuperación",
+        "en": "Demolition & Recovery",
+        "zh": "拆除和回收"
+      },
+      "description": {
+        "es": "Desmantelamiento seguro con reutilización de materiales, minimizando el impacto a terceros y promoviendo la sostenibilidad.",
+        "en": "Safe dismantling with material reuse, minimizing third-party impact and promoting sustainability.",
+        "zh": "安全拆除，材料再利用，最大限度减少对第三方的影响并促进可持续发展。"
+      }
+    }
+  ]
+}
