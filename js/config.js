@@ -15,7 +15,7 @@ const siteConfig = {
   
   // Contact Information (from Facebook page)
   contact: {
-    email: 'basaltosconcretos@hotmail.com',
+    email: 'info@basaltosyagregados.com',
     phone: '+52 993 177 2142',
     whatsapp: '+52 993 177 2142',
     address: {
